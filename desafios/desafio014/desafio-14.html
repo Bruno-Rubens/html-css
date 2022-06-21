@@ -7,10 +7,26 @@
     <title>Tabelas</title>
     <style>
         table{
+            border-collapse: collapse;
             width: 400px;
         }
-        th, td{
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        th{
             border: solid 1px black;
+        }
+        td{
+            border: solid 1px black;
+        }
+        .num{
+            text-align: center;
+        }
+        .exatas{
+            background-color: gray;
+            color: white;
+            text-align: left;
         }
     </style>
 </head>
@@ -28,30 +44,49 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
             </tr>
             <tr>
                 <td>Física</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
             </tr>
             <tr>
                 <td>Química</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
             </tr>
+            <tr>
+                <th colspan="4" scope="rowgroup" class="exatas">Média de exatas</th>
+                <td class="exatas" style="text-align: center">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <th colspan="4" class="exatas">Média de humanas</th>
+            <td class="exatas" style="text-align: center;">0.0</td>
         </tbody>
     </table>
 </body>
